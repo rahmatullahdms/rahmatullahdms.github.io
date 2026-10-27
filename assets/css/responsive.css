@@ -1,0 +1,930 @@
+/*==================================================
+        RESPONSIVE CSS
+        RAHMAT PORTFOLIO
+==================================================*/
+
+
+/*==================================================
+        LARGE LAPTOP
+        1200px
+==================================================*/
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+    .hero-image img{
+
+        width:330px;
+
+        height:330px;
+
+    }
+
+    .portfolio-grid{
+
+        gap:25px;
+
+    }
+
+}
+
+
+/*==================================================
+        LAPTOP / TABLET
+        992px
+==================================================*/
+
+@media (max-width:992px){
+
+    /* ---------- HERO ---------- */
+
+    .hero-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:20px;
+
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    .services-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    /* ---------- PORTFOLIO ---------- */
+
+    .portfolio-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .portfolio-card{
+
+        width:100%;
+
+        height:320px;
+
+    }
+
+
+    /* ---------- TESTIMONIAL ---------- */
+
+    .testimonial-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-container{
+
+        display:grid;
+
+        grid-template-columns:1fr 1.1fr;
+
+        gap:35px;
+
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:35px;
+
+    }
+
+
+    /* ---------- TIMELINE ---------- */
+
+    .timeline{
+
+        padding-left:30px;
+
+    }
+
+}
+
+
+/*==================================================
+        TABLET
+        768px
+==================================================*/
+
+@media (max-width:768px){
+
+    /* ---------- CONTAINER ---------- */
+
+    .container{
+
+        width:90%;
+
+    }
+
+
+    /* ---------- HEADER ---------- */
+
+    header .container{
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        height:80px;
+
+        padding:0;
+
+    }
+
+    nav{
+
+        width:auto;
+
+    }
+
+    .hire-btn{
+
+        display:none;
+
+    }
+
+
+    /* ---------- MOBILE MENU BUTTON ---------- */
+
+    .menu-toggle{
+
+        display:block;
+
+        cursor:pointer;
+
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .nav-links{
+
+        position:absolute;
+
+        top:80px;
+
+        left:-100%;
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        padding:30px 0;
+
+        background:#0f172a;
+
+        border-top:1px solid rgba(255,255,255,.1);
+
+        box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+        transition:left .4s ease;
+
+        z-index:999;
+
+    }
+
+    .nav-links.active{
+
+        left:0;
+
+    }
+
+    .nav-links li{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .nav-links a{
+
+        display:block;
+
+        width:100%;
+
+        padding:8px 0;
+
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero{
+
+        padding-top:150px;
+
+    }
+
+    .hero-content{
+
+        gap:30px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+        line-height:1.2;
+
+    }
+
+    .hero h2{
+
+        font-size:26px;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ---------- PORTFOLIO ---------- */
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .portfolio-card{
+
+        width:100%;
+
+        height:350px;
+
+    }
+
+    .portfolio-filter{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+    }
+
+    .portfolio-filter button{
+
+        width:auto;
+
+        padding:10px 18px;
+
+    }
+
+
+    /* ---------- TESTIMONIAL ---------- */
+
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact{
+
+        padding:80px 0;
+
+    }
+
+    .contact-container{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+        margin-top:40px;
+
+    }
+
+    .contact-box{
+
+        width:100%;
+
+    }
+
+    .contact-form{
+
+        width:100%;
+
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats-container{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:35px;
+
+    }
+
+}
+
+
+/*==================================================
+        MOBILE
+        576px
+==================================================*/
+
+@media (max-width:576px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero{
+
+        padding-top:140px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+        line-height:1.25;
+
+    }
+
+    .hero h2{
+
+        font-size:22px;
+
+    }
+
+    .description{
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+    .hero-image img{
+
+        width:230px;
+
+        height:230px;
+
+    }
+
+
+    /* ---------- HERO BUTTONS ---------- */
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+
+    }
+
+
+    /* ---------- SOCIAL ICONS ---------- */
+
+    .social-icons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    /* ---------- SECTION TITLES ---------- */
+
+    .section-title{
+
+        font-size:30px;
+
+        line-height:1.3;
+
+    }
+
+    .section-subtitle{
+
+        font-size:15px;
+
+    }
+
+
+    /* ---------- PORTFOLIO ---------- */
+
+    .portfolio-filter{
+
+        gap:8px;
+
+    }
+
+    .portfolio-filter button{
+
+        padding:9px 14px;
+
+        font-size:13px;
+
+    }
+
+    .portfolio-card{
+
+        height:320px;
+
+    }
+
+    .portfolio-overlay{
+
+        padding:25px;
+
+    }
+
+    .portfolio-overlay h3{
+
+        font-size:23px;
+
+    }
+
+    .portfolio-overlay p{
+
+        font-size:14px;
+
+    }
+
+    .project-btn{
+
+        width:160px;
+
+        padding:11px 20px;
+
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact{
+
+        padding:70px 0;
+
+    }
+
+    .contact-container{
+
+        gap:25px;
+
+    }
+
+    .contact-form{
+
+        padding:25px;
+
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+
+        font-size:14px;
+
+        padding:15px;
+
+    }
+
+    .contact-form button{
+
+        padding:15px;
+
+        font-size:15px;
+
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+    .footer-links ul{
+
+        padding:0;
+
+    }
+
+    .footer-links li{
+
+        list-style:none;
+
+    }
+
+
+    /* ---------- TIMELINE ---------- */
+
+    .timeline{
+
+        padding-left:20px;
+
+    }
+
+    .timeline-dot{
+
+        left:-31px;
+
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats-container{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+/*==================================================
+        SMALL MOBILE
+        400px
+==================================================*/
+
+@media (max-width:400px){
+
+    .container{
+
+        width:90%;
+
+    }
+
+
+    /* ---------- HEADER ---------- */
+
+    header .container{
+
+        height:70px;
+
+    }
+
+    .logo{
+
+        font-size:26px;
+
+    }
+
+    .nav-links{
+
+        top:70px;
+
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero h2{
+
+        font-size:18px;
+
+    }
+
+    .hero-image img{
+
+        width:190px;
+
+        height:190px;
+
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        max-width:280px;
+
+        padding:14px;
+
+    }
+
+
+    /* ---------- PORTFOLIO ---------- */
+
+    .portfolio-filter{
+
+        gap:8px;
+
+    }
+
+    .portfolio-filter button{
+
+        width:auto;
+
+        padding:8px 12px;
+
+        font-size:12px;
+
+    }
+
+    .portfolio-card{
+
+        height:300px;
+
+    }
+
+    .portfolio-overlay{
+
+        padding:20px;
+
+    }
+
+    .portfolio-overlay i{
+
+        font-size:30px;
+
+        margin-bottom:12px;
+
+    }
+
+    .portfolio-overlay h3{
+
+        font-size:20px;
+
+    }
+
+    .portfolio-overlay p{
+
+        font-size:13px;
+
+    }
+
+    .project-btn{
+
+        width:145px;
+
+        padding:10px 15px;
+
+        font-size:13px;
+
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-box{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .contact-box i{
+
+        margin-bottom:5px;
+
+    }
+
+    .contact-form{
+
+        padding:20px;
+
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-about h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+
+/*==================================================
+        EXTRA SMALL DEVICES
+        320px
+==================================================*/
+
+@media (max-width:320px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero h1{
+
+        font-size:25px;
+
+    }
+
+    .hero h2{
+
+        font-size:17px;
+
+    }
+
+    .hero-image img{
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+    .section-title{
+
+        font-size:26px;
+
+    }
+
+    .portfolio-card{
+
+        height:280px;
+
+    }
+
+    .portfolio-filter button{
+
+        padding:8px 10px;
+
+        font-size:11px;
+
+    }
+
+    .contact-form{
+
+        padding:16px;
+
+    }
+
+}
